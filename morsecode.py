@@ -380,6 +380,7 @@ def main():
 
         if(user_input == '0'):
             break
+        
         if(is_help_command(user_input) == True):
             print(get_help_message())
             continue
@@ -388,7 +389,7 @@ def main():
             encoding_sentence(user_input)
             continue
 
-        if(is_validated_morse_code == True):
+        if(is_validated_morse_code(user_input) == True):
             decoding_sentence(user_input)
             continue
 
