@@ -385,11 +385,11 @@ def main():
             continue
 
         if(is_validated_english_sentence(user_input) == True):
-            decoding_sentence(user_input)
+            encoding_sentence(user_input)
             continue
 
         if(is_validated_morse_code == True):
-            encoding_sentence(user_input)
+            decoding_sentence(user_input)
             continue
 
         print("Wrong Input")
