@@ -92,6 +92,13 @@ def is_include_sc(user_input):
     return False
 
 def is_not_include_alpha(user_input):
+    """
+    Input:
+        - user_input : 문자열값으로 사용자가 입력하는 문자
+    Output:
+        - 입력한 값이 아래에 해당될 경우 False, 그렇지 않으면 True
+          1) 문장부호(.,!?)를 제외하면 입력값이 없거나 빈칸만 입력했을 경우
+    """
     alpha_cnt = 0
     for i in user_input:
         if(i.isalpha()==True):
@@ -381,7 +388,7 @@ def main():
             decoding_sentence()
             continue
 
-        if(is_validated_morse_code == true):
+        if(is_validated_morse_code == True):
             encoding_sentence()
             continue
 
