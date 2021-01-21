@@ -378,19 +378,21 @@ def main():
     while(True):
         user_input = input("Input your message(H - Help, 0 - Exit): ")
 
+        #user_input = "Hello!!"
+
         if(user_input == '0'):
             break
-        
+
         if(is_help_command(user_input) == True):
             print(get_help_message())
             continue
 
         if(is_validated_english_sentence(user_input) == True):
-            encoding_sentence(user_input)
+            print(encoding_sentence(user_input))
             continue
 
         if(is_validated_morse_code(user_input) == True):
-            decoding_sentence(user_input)
+            print(decoding_sentence(user_input))
             continue
 
         print("Wrong Input")
