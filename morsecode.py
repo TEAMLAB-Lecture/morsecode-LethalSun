@@ -202,7 +202,7 @@ def is_validated_morse_code(user_input):
             if(i == j):
                 checker = True
                 break
-        if(i == ' '):
+        if(i == ''):
             checker = True
         if(checker == False):
             return False
